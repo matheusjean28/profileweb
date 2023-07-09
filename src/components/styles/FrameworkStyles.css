@@ -1,0 +1,109 @@
+/* animations */
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes changeColor {
+    0% {
+      border-color: gray;
+      box-shadow: 1px 1px 10px gray;
+    }
+    25% {
+      border-color: aquamarine;
+      box-shadow: 1px 1px 10px aqua;
+
+    }
+    50% {
+      border-color: darkgreen;
+      box-shadow: 1px 1px 10px darkgreen;
+
+    }
+    75% {
+
+        box-shadow: 1px 1px 10px darkblue;
+        border-color: darkblue;
+    }
+    100% {
+      border-color: purple;
+      box-shadow: 1px 1px 10px  purple;
+
+    }
+  }
+
+.stackConteiner {
+  height: 100%;
+  padding: 0 100px;
+  align-items: center;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+.stackConteiner > h2 {
+  padding-top: 15px;
+}
+
+.stackConteiner ul {
+  display: grid;
+  list-style: none;
+  justify-content: center;
+  gap: 15px 30px;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 250px);
+  place-items: center;
+  place-content: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.StackLiStyle {
+  border-radius: 15px;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgb(143, 73, 248);
+  flex-direction: column;
+}
+
+.StackLiStyle > img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 15px;
+  transition: ease-in-out 0.1s;
+  margin: 15px;
+}
+.StackLiStyle > img:hover {
+    height: 41px;
+    width: 41px;
+}
+.rotate {
+    animation: girar 2s linear infinite;
+}
+.rotate:hover{
+    animation: girar 5s linear infinite;
+}
+
+.StackLiStyle > p {
+  transition:  .3s ease;
+  cursor: default;
+  margin: 5px 15px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.StackLiStyle  p:hover     {
+    border: 1px solid white;
+
+  border: 1px solid white transparent;
+  border-radius: 10px;
+  padding: 3px 10px;
+
+  animation: changeColor 5s linear infinite;
+
+}

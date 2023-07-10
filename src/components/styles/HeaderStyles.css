@@ -1,14 +1,14 @@
 .headerStyle {
     background-color: rgb(27, 98, 160);
     width: 100%;
+    padding:  0 100px;
     height: 50px;
-    display: grid;
+    display: flex;
     align-items: center;
     list-style: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr 3fr; 
     /* position: absolute; */
 
-    place-items: center;
+    justify-content: space-between;
 }
 
 .LiStyle {
@@ -26,5 +26,8 @@
     border: 1px solid whitesmoke;
     background: none;
     border-radius: 15px;
-
+    
+}
+.LiStyleBtn {
+    padding-left: 50%;
 }

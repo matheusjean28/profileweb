@@ -8,7 +8,7 @@ function Header() {
         <li className="LiStyle">Projetos</li>
         <li className="LiStyle">Ferramentas</li>
         <li className="LiStyle">Me Encontre</li>
-        <li className="LiStyle">
+        <li className="LiStyle  LiStyleBtn">
           <button>Email</button>
         </li>
       </ul>
